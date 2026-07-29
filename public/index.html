@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow — Clean & Simple Task Management</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span>TaskFlow</span>
+      </div>
+      <p class="subtitle">Focus on what matters today.</p>
+    </header>
+
+    <main>
+      <form id="task-form" class="task-form">
+        <input type="text" id="task-input" placeholder="What needs to be done?" required autocomplete="off">
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+
+      <section class="task-section">
+        <div class="task-stats">
+          <span>Tasks (<span id="task-count">0</span>)</span>
+        </div>
+        <ul id="task-list" class="task-list"></ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
